@@ -1,0 +1,19 @@
+.footer {
+  grid-area: footer;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 75px;
+}
+
+.footer i {
+  font-size: 4rem;
+  color: #d43f12;
+}
+
+.footer i:hover {
+  color: #fa0f0f;
+}

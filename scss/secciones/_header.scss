@@ -1,0 +1,21 @@
+.header {
+  grid-area: header;
+  background-color: #e9d45d;
+  color: black;
+  min-height: 15vh;
+  text-align: start;
+  padding: 15px 10px 15px 125px;
+  /* to bottom (hacia abajo); to top (hacia arriba) --> Eje vertical */
+  /* to right (derecha); to left (derecha) --> Eje horizontal */
+  /* medicion de grados con DEG --> ej.- 45deg */
+  /* pag. de gradiente --> cssgradient.io */
+  background-image: linear-gradient(to bottom, #ff8400, #cff242);
+}
+
+.header {
+  h1 {
+    font-family: fantasy;
+    font-size: 3rem;
+    margin: 1rem;
+  }
+}

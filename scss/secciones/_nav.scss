@@ -1,0 +1,35 @@
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoDesktop {
+  width: 13rem;
+  /* translateY --> eje vertical. TranslateX --> eje horizontal */
+}
+
+.nav ul {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.nav li {
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+  animation-name: cambioColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  /* se puede poner una cantidad de veces especifica para que se repita, tan solo con numeros */
+}
+
+.nav li:hover {
+  background-color: #d6d654;
+}
+
+.nav a {
+  color: #080707;
+  text-decoration: none;
+}
