@@ -2,7 +2,7 @@
 .header {
   grid-area: header;
   background-color: #e9d45d;
-  color: black;
+  color: rgba(0, 0, 0, 0.833);
   min-height: 15vh;
   text-align: start;
   padding: 15px 10px 15px 125px;
@@ -10,7 +10,7 @@
   /* to right (derecha); to left (derecha) --> Eje horizontal */
   /* medicion de grados con DEG --> ej.- 45deg */
   /* pag. de gradiente --> cssgradient.io */
-  background-image: linear-gradient(to bottom, #ff8400, #cff242); }
+  background-image: linear-gradient(to bottom, #f49228, #d6f659); }
 
 .header h1 {
   font-family: fantasy;
@@ -121,10 +121,10 @@
 
 .footer i {
   font-size: 4rem;
-  color: #d43f12; }
+  color: #f7754d; }
 
 .footer i:hover {
-  color: #fa0f0f; }
+  color: #f85454; }
 
 .form {
   grid-area: form;
@@ -169,8 +169,12 @@
 .grilla {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 2.5fr 1fr;
-  grid-template-areas: "nav header header header" "nav primeraSeccion primeraSeccion aside" "nav segundaSeccion segundaSeccion aside" "nav form form aside" "footer footer footer footer";
-  background-color: #f28f3e;
+  grid-template-areas: "nav header header header"
+ "nav primeraSeccion primeraSeccion aside"
+ "nav segundaSeccion segundaSeccion aside"
+ "nav form form aside"
+ "footer footer footer footer";
+  background-color: #cee751;
   color: black;
   /*Header*/
   /*Primera seccion*/
@@ -178,13 +182,13 @@
 
 @keyframes cambioColor {
   0% {
-    background-color: #e47756; }
+    background-color: #e69279; }
   25% {
     background-color: #e9d45d; }
   50% {
-    background-color: #d2934b; }
+    background-color: #f1b168; }
   75% {
-    background-color: greenyellow; } }
+    background-color: rgb(174, 240, 75); } }
 
 @keyframes girando {
   0% {
@@ -206,7 +210,12 @@
 /*MOBILE LAST = MAX-WIDTH*/
 @media (max-width: 768px) {
   .grilla {
-    grid-template-areas: "nav nav nav nav" "header header header header" "primeraSeccion primeraSeccion primeraSeccion aside" "segundaSeccion segundaSeccion segundaSeccion aside" "form form form aside" "footer footer footer footer"; }
+    grid-template-areas: "nav nav nav nav"
+ "header header header header"
+ "primeraSeccion primeraSeccion primeraSeccion aside"
+ "segundaSeccion segundaSeccion segundaSeccion aside"
+ "form form form aside"
+ "footer footer footer footer"; }
   .grilla .nav {
     flex-direction: row; }
   .grilla .nav ul {
